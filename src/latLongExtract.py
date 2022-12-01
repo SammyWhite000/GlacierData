@@ -11,6 +11,7 @@ def extraction(filename):
         csv_reader = csv.reader(f) 
         for row in csv_reader:
            data.append([row[4], row[5]]) 
+    data.pop(0)
     addToCSV(data)
 
 def main():
